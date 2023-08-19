@@ -44,7 +44,7 @@ ROOT_URLCONF = 'personal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'personal/templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -65,12 +65,12 @@ WSGI_APPLICATION = 'personal.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'verceldb',
-        'USER':'default',
-        'PASSWORD':'aNdCngbe0W9S',
-        'HOST':'ep-solitary-truth-13080581-pooler.us-east-1.postgres.vercel-storage.com',
-        'POSR':'5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER':'postgres',
+        'PASSWORD':'t2vpvB0koXGfuD6doPuh',
+        'HOST':'containers-us-west-160.railway.app',
+        'POSR':'7490',
     }
 }
 
