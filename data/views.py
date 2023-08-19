@@ -96,7 +96,7 @@ def home(request):
         'projects':projects,
         'social': SocialLinks.objects.all(),
     }
-    return render(request, 'index.html', context)
+    return render(request, 'templates/index.html', context)
 
 def project_view(request):
     data = json.loads(request.body)
